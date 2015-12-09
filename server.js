@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+var port = 8000;
 
 app.set('view engine', 'ejs');
 
@@ -9,5 +10,5 @@ app.get('/', function(req,res) {
 	res.render('pages/index');
 });
 
-app.listen(8000);
-console.log('port is love, port is 8000...');
+app.listen(port);
+console.log('port is love, port is (' +port+ ')...');
